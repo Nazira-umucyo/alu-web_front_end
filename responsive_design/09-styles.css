@@ -1,0 +1,74 @@
+/* Base footer styles */
+
+:root {
+	  --footer-padding: 2rem 4rem 2rem;
+  }
+
+  .footer {
+	    background-color: #222;
+	      color: #fff;
+	        padding: var(--footer-padding);
+		  display: flex;
+		    justify-content: space-between;
+		      align-items: center;
+		        flex-wrap: wrap;
+			  font-family: Arial, sans-serif;
+		  }
+
+		  .footer a {
+			    color: #fff;
+			      text-decoration: none;
+			        font-weight: bold;
+			}
+
+			.footer a:hover {
+				  text-decoration: underline;
+			  }
+
+			  .footer .social.nav ul,
+			  .footer .footer-nav ul {
+				    list-style: none;
+				      margin: 0;
+				        padding: 0;
+					  display: flex;
+				  }
+
+				  .footer .social.nav li + li,
+				  .footer .footer-nav li + li {
+					    padding-left: 1rem; /* base padding */
+				    }
+
+				    /* Media query for max-width 767px */
+
+				    @media (max-width: 767px) {
+
+					      :root {
+						          --footer-padding: 5rem 2rem 1rem;
+							    }
+
+							      .footer {
+								          padding: var(--footer-padding);
+									      flex-direction: column;
+									          align-items: center;
+										      text-align: center;
+										        }
+
+											  .footer .social.nav,
+											    .footer .footer-nav {
+												        text-align: center;
+													    width: 100%;
+													        margin-bottom: 1rem;
+														  }
+
+														    .footer .social.nav ul,
+														      .footer .footer-nav ul {
+															          justify-content: center;
+																    }
+
+																      /* Add left padding starting from second li */
+																      .footer .social.nav li + li,
+																        .footer .footer-nav li + li {
+																		    padding-left: 2rem;
+																		      }
+																	      }
+

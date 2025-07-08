@@ -1,0 +1,71 @@
+/* Base styles */
+
+:root {
+	  --color-white: #fff;
+	    --color-black: #000;
+	      --text-color: #333;
+      }
+
+      body {
+	        font-family: Arial, sans-serif;
+		  background-color: #f5f5f5;
+		    color: var(--text-color);
+		      margin: 0;
+		        padding: 2rem;
+		}
+
+		/* Card WORK */
+
+		.card-work {
+			  background-color: #eee;
+			    margin-bottom: 2rem;
+			      padding: 1rem;
+			        border-radius: 6px;
+			}
+
+			.card-inner {
+				  position: static;
+				    --text-color: var(--color-black);
+			    }
+
+			    .card-title {
+				      font-size: 2rem;
+				        font-weight: bold;
+					  opacity: 0.8;
+					    margin-bottom: 1rem;
+				    }
+
+				    .card-title a {
+					      color: var(--text-color);
+					        text-decoration: none;
+						  padding: 0 0.5rem;
+						    display: inline-block;
+						      transition: color 0.3s ease;
+					      }
+
+					      .card-title a:hover {
+						        color: var(--color-black);
+						}
+
+						/* Media query for max-width 767px */
+
+						@media (max-width: 767px) {
+
+							  .card-work .card-inner {
+								      --text-color: var(--color-white);
+								          position: relative;
+									      background-color: #333; /* Added background to show white text better */
+									          padding: 1rem;
+										      border-radius: 6px;
+										        }
+
+											  .card-work .card-title {
+												      opacity: 1;
+												        }
+
+													  .card-work .card-title a {
+														      padding: 2rem 1rem 0 1rem;
+														          color: var(--text-color);
+															    }
+														    }
+

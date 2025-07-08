@@ -1,0 +1,15 @@
+/* Section HERO section */
+
+/* Add this before any media queries */
+
+.article-page .section-hero {
+	  margin-top: -8.5rem;
+	    padding-top: 5rem;
+    }
+
+    /* Example existing styles for section-hero */
+    /* ... */
+
+    /* Existing media queries */
+    /* ... */
+
